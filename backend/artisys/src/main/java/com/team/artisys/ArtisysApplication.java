@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
-@EntityScan(basePackages = "com.team.artisys.model")
+@EntityScan("com.team.artisys.model")
 public class ArtisysApplication {
 
     public static void main(String[] args) {

@@ -13,12 +13,12 @@ public class Task_assignment {
     private Long id_assignment;
     @ManyToOne
     @JoinColumn(name = "id")
-    private User id;
+    private Users id;
     @ManyToOne
     @JoinColumn(name = "task_id")
     private Task id_task;
 
-    @ManyToOne
-    @JoinColumn(name = "pm")
-    private Task_assignment pm;
+//    @ManyToOne
+//    @JoinColumn(name = "pm")
+//    private Task_assignment pm;
 }

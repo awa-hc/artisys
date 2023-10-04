@@ -11,11 +11,11 @@ public class Project_teams {
     private Long id_project_team;
 
     @OneToOne
-    @PrimaryKeyJoinColumn
+    @JoinColumn( name = "project_id")
     private Projects id_project;
 
     @ManyToOne
     @JoinColumn( name= "id")
-    private User id;
+    private Users id;
 
 }

@@ -1,6 +1,6 @@
 package com.team.artisys.repository;
 
-import com.team.artisys.model.User;
+import com.team.artisys.model.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;
@@ -8,7 +8,8 @@ import java.util.Optional;
 
 @Repository
 
-public interface UserRepository extends JpaRepository<User, Long> {
-    List<User> findUsersBy(Long id);
+public interface UserRepository extends JpaRepository<Users, Long> {
+
+    Optional<Users> findByName(String name);
 
 }

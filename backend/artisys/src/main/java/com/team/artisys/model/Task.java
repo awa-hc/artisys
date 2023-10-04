@@ -16,6 +16,6 @@ public class Task {
     private Date ending_date;
     private int status;
     @ManyToOne
-    @JoinColumn(name = "name")
+    @JoinColumn(name = "project_id")
     private Projects name;
 }
