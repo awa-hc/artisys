@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ButtonAuth from "../components/auth/ButtonAuth";
 import InputField from "../components/auth/InputField";
 
@@ -7,12 +8,10 @@ export function SignupPage() {
       className="App bg-fondo bg-cover h-screen w-screen flex text-white justify-center items-center"
       style={{ backgroundImage: "URL(./fondo.png)" }}
     >
-      <section className="w-2/3 h-2/3 flex justify-center items-center bg-black/40 rounded-3xl shadow-lg border-t-[0.5px] border-l-[0.5px] border-white backdrop-blur-lg">
+      <section className="w-2/3 h-max min-h-2/3 flex justify-center items-center bg-black/40 rounded-3xl shadow-lg border-t-[0.5px] border-l-[0.5px] border-white backdrop-blur-lg">
         <main className="w-4/12 text-center">
           <h3 className="text-2xl">Registro</h3>
-          <p className="font-light">
-            Llena los siguientes datos
-          </p>
+          <p className="font-light">Llena los siguientes datos</p>
           <section className="py-5">
             <InputField
               text="Email"
@@ -37,9 +36,10 @@ export function SignupPage() {
             bgstart="from-[#FF5F56]"
             bgend="to-black"
           />
-          <p className="flex justify-end mt-4">
-            Ya tienes cuenta? <span className="ml-2 font-bold">Inicia Sesión</span>
-          </p>
+          <Link to="/login" className="flex justify-end mt-4">
+            Ya tienes cuenta?{" "}
+            <span className="ml-2 font-bold">Inicia Sesión</span>
+          </Link>
         </main>
       </section>
     </div>
