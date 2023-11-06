@@ -12,7 +12,7 @@ export function LoginPage() {
           <h3 className="text-2xl">Inicio de Sesion</h3>
           <p className="font-light">
             Inicia Sesion Con Tu cuenta de
-            <span className="font-bold">Artisys</span>
+            <span className="font-bold"> Artisys</span>
           </p>
           <section className="py-5">
             <InputField
