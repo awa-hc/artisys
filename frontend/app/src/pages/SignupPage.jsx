@@ -7,7 +7,7 @@ export function SignupPage() {
       className="App bg-fondo bg-cover h-screen w-screen flex text-white justify-center items-center"
       style={{ backgroundImage: "URL(./fondo.png)" }}
     >
-      <section className="w-2/3 h-2/3 flex justify-center items-center bg-black/40 rounded-3xl shadow-lg border-t-[0.5px] border-l-[0.5px] border-white backdrop-blur-lg">
+      <section className="w-2/3 h-max py-8 flex justify-center items-center bg-black/40 rounded-3xl shadow-lg border-t-[0.5px] border-l-[0.5px] border-white backdrop-blur-lg">
         <main className="w-4/12 text-center">
           <h3 className="text-2xl">Registro</h3>
           <p className="font-light">
