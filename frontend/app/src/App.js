@@ -1,27 +1,38 @@
 import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import Info from "./components/info";
-import Services2 from "./components/services2";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
-import {NextUIProvider} from "@nextui-org/react";
+import { NextUIProvider } from "@nextui-org/react";
+import { LoginPage } from "./pages/LoginPage";
 
+const routes = [
+  {
+    path: "/",
+    element: <HomePage />,
+    name: "home",
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
+    name: "login",
+  },
+];
 function App() {
   return (
     <NextUIProvider>
-      <div className="App bg-fondo bg-cover h-full w-screen" style={{backgroundImage: "URL(./fondo.png)"}}>
-        <Navbar/>
-        <main className=" snap-y snap-mandatory relative w-full h-screen overflow-auto">
-          <div className=" snap-start pt-20">
-            <Hero/>
-          </div>
-          <div className=" snap-start pt-20">
-            <Info/>
-          </div>
-          <div className=" snap-start pt-20">
-            <Services2/>
-          </div>
-        </main>
-      </div>
+      <Router>
+        <Routes>
+          {routes.map((routes) => {
+            return (
+              <Route
+                key={routes.name}
+                path={routes.path}
+                element={routes.element}
+              />
+            );
+          })}
+        </Routes>
+      </Router>
     </NextUIProvider>
   );
 }

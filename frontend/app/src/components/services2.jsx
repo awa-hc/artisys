@@ -1,20 +1,14 @@
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardFooter,
-  Image,
-  Button,
-} from "@nextui-org/react";
-import hero_panel from "./hero - panel.png";
-import hero_projects from "./hero - projects.png";
+import { Card, CardHeader, CardFooter, Image, Button } from "@nextui-org/react";
+import hero_panel from "../static/images/hero - panel.png";
+import hero_projects from "../static/images/hero - projects.png";
 
 function services2() {
   return (
-    <div className=" w-full h-screen text-white font-custom px-60 ">
-      <div className=" tracking-wide title text-[52px] font-extrabold font-custom">
-        <p>Servicios</p>
-      </div>
+    <div className=" w-full h-screen text-white font-custom px-60 grid content-center ">
+      <p className="tracking-wide title text-[52px] font-extrabold font-custom">
+        Servicios
+      </p>
       <div className="max-w-[1200px] gap-4 grid grid-cols-12 grid-rows-2 pt-2">
         <Card className="col-span-12 sm:col-span-4 h-[300px]">
           <CardHeader className="absolute h-44 z-10 flex-col !items-start bg-gradient-to-b from-zinc-950/95 to-zinc-0 tracking-wider">
@@ -77,7 +71,11 @@ function services2() {
           <CardFooter className="absolute bg-fondo/90 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between font-custom tracking-wide">
             <div>
               <p className="text-white text-tiny">Asignación de tareas</p>
-              <p className="text-white/60 text-tiny">El desarrollo de un sistema formal de asignación de tareas es una oportunidad para mejorar la gestión de los recursos humanos y crear un entorno de trabajo más justo y equitativo.</p>
+              <p className="text-white/60 text-tiny">
+                El desarrollo de un sistema formal de asignación de tareas es
+                una oportunidad para mejorar la gestión de los recursos humanos
+                y crear un entorno de trabajo más justo y equitativo.
+              </p>
             </div>
             <Button
               className="text-tiny"
@@ -104,7 +102,9 @@ function services2() {
               <div className="flex flex-col font-custom tracking-wide">
                 <p className=" text-tiny text-white">Panel Dashboard</p>
                 <p className=" text-tiny text-white/60">
-                El diseño de un Dashboard para el seguimiento de proyectos pendientes es una oportunidad para mejorar la gestión de proyectos y tomar decisiones más informadas.
+                  El diseño de un Dashboard para el seguimiento de proyectos
+                  pendientes es una oportunidad para mejorar la gestión de
+                  proyectos y tomar decisiones más informadas.
                 </p>
               </div>
             </div>

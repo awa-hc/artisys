@@ -1,9 +1,9 @@
 import React from 'react'
-import img_info from "./info.svg";
+import img_info from "../static/images/info.svg";
 
 function info() {
   return (
-    <div className="w-full h-screen text-white font-custom flex flex-row px-60 py-36 gap-24">
+    <div className="w-full h-screen text-white font-custom flex flex-row justify-center items-center px-60 py-36 gap-24">
         <article className=' flex flex-col gap-8'>
             <div className="title tracking-wide text-[52px] font-extrabold">
                 <p>¿Qué es ARTISYS?</p>
