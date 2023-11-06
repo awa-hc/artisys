@@ -19,7 +19,7 @@ const navbar = memo(() => {
           <p>SERVICIOS</p>
         </div>
         <div className="user flex gap-8 items-center justify-end text-white flex-grow basis-0">
-          <button id="test">REGISTRATE</button>
+          <Link to="/signup" id="test">REGISTRATE</Link>
 
           <Link to="/login" className="login bg-ff5f56 px-4 py-1 rounded-3xl">
             INICIAR SESIÓN
