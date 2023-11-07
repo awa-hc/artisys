@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import { NextUIProvider } from "@nextui-org/react";
 import { LoginPage } from "./pages/LoginPage";
 import { SignupPage } from "./pages/SignupPage";
+import { StartPage } from "./pages/StartPage";
 
 const routes = [
   {
@@ -20,6 +21,11 @@ const routes = [
     path: "/signup",
     element: <SignupPage/>,
     name: "signup"
+  },
+  {
+    path: "/Inicio",
+    element: <StartPage/>,
+    name: "Inicio"
   },
 ];
 function App() {

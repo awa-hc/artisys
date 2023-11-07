@@ -6,7 +6,7 @@ function hero() {
     <main className="flex flex-col justify-center items-center w-full h-screen text-white font-custom">
       <h1 className="ml-96 font-offbit font-semibold text-[100px]">
         ARTISYS
-        <span className="ml-8 font-bold text-[90px]" style={{ opacity: 0.65 }}>
+        <span className="ml-8 font-bold text-[90px] font-custom" style={{ opacity: 0.65 }}>
           System
         </span>
       </h1>
