@@ -1,7 +1,7 @@
-export default function ButtonAuth({ title, textcolor, bgstart, bgend }) {
+export default function ButtonAuth({ title, textcolor, bgcolor}) {
   return (
     <button
-      className={`${textcolor} bg-gradient-to-b ${bgstart} ${bgend} px-4 py-2 rounded-2xl w-full`}
+      className={`${textcolor} ${bgcolor} px-4 py-2 rounded-2xl w-full font-semibold`}
     >
       {title}
     </button>

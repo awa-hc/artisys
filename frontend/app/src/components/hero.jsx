@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function hero() {
   return (
@@ -13,12 +14,12 @@ function hero() {
         Empieza a organizar, colaborar y crear
       </p>
       <nav className="buttons flex flex-row justify-center pt-12 gap-6 font-extrabold text-[14px] tracking-widest">
-        <a href="#" className=" bg-[#3F496F] px-8 py-1 rounded-2xl">
+        <Link href="#" className=" bg-[#3F496F] px-8 py-1 rounded-2xl">
           <p>CONOCE MÁS</p>
-        </a>
-        <a href="#" className=" bg-[#FF5F56] px-8 py-1 rounded-2xl">
+        </Link>
+        <Link href="#" className=" bg-[#FF5F56] px-8 py-1 rounded-2xl">
           <p>COMIENZA YA</p>
-        </a>
+        </Link>
       </nav>
     </main>
   );
