@@ -13,6 +13,8 @@ module.exports = {
       backgroundColor: {
         'ff5f56': '#FF5F56',
         fondo: '#1E1E1E',
+        fondo_tagert: "rgba(21.45, 20.93, 20.93, 0.40)",
+        fondo_card: "rgba(45.69, 43.59, 43.59, 0.61)"
       },
       textColor: {
         'ff5f56': '#FF5F56',
